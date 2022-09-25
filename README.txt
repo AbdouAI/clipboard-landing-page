@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/AbdouAI/clipboard-landing-page)
+- Live Site URL: (https://abdouai.github.io/clipboard-landing-page/)
 
 ## My process
 
