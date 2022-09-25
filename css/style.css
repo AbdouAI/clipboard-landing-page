@@ -1,0 +1,515 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html{
+    font-size: 18px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+}
+
+.logo{
+    border-top: solid rgba(204, 202, 202, 0.2) 1px;
+    background-image: url(../images/bg-header-mobile.png);
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-img{
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+
+.content{
+    margin: 0 1.4rem;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: .92rem;
+}
+
+.txt-box{
+    margin: 0 auto;
+}
+
+.history{
+    margin-top: 1.7rem;
+    line-height: 1.3;
+}
+
+.history>p{
+    margin-top: 1rem;
+}
+
+
+.action-call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.6rem;
+}
+
+
+.btn{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.2rem;
+    width: 100%;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    font-weight: 400;
+    
+}
+
+.ios-btn:link, .ios-btn:visited{
+    background-color:hsl(171, 66%, 44%);
+    color: white;
+    box-shadow: 0px 3px 0px hsl(170, 61%, 38%),
+                0px 8px 25px -10px hsl(171, 66%, 44%);
+}
+
+.ios-btn:active{
+    background-color: hsl(170, 61%, 38%);
+
+}
+
+.mac-btn:link, .mac-btn:visited{
+    background-color: hsl(233, 100%, 69%);
+    margin-top: 1.5rem;
+    color: white;
+    box-shadow: 0px 3px 0px hsl(231, 58%, 55%),
+                0px 8px 25px -10px hsl(233, 100%, 69%);
+}
+
+.mac-btn:active{
+    background-color: hsl(231, 58%, 55%);
+}
+
+.snippets{
+    margin-top: 6rem;
+}
+
+.snippets>p{
+    margin-top: 1.3rem;
+}
+
+.comp-img-and-properties{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-img-and-properties>.comp-img{
+    margin-top: 4rem;
+}
+
+.comp-img-and-properties>.column>h3{
+    margin-top: 2.7rem;
+}
+
+.comp-img-and-properties>.column>p{
+    margin-top: .3rem;
+}
+
+.access{
+    margin-top: 9.5rem;
+}
+
+.access>p{
+    margin-top: .55rem;
+}
+
+.devices-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.supercharge{
+    margin-top: 5rem;
+}
+
+.text-columns{
+    margin-top: 2.2rem;
+}
+
+.text-columns>.column{
+    margin-top: 3rem;
+}
+
+.text-columns>.column>h3{
+    margin-top: 1.8rem;
+}
+
+.text-columns>.column>p{
+    margin-top: 1rem;
+}
+
+.logo-columns{
+    margin-top: 7.7rem;
+    min-height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.clipboard{
+    margin-top: 9rem;
+}
+.clipboard>p{
+    margin-top: 1rem;
+}
+
+.action-call2{
+    margin-bottom: 7.5rem;
+}
+
+footer{
+    min-height: 30rem;
+    background-color: hsl(216, 24%, 96%);
+    border-bottom:  solid 1px hsl(216, 24%, 96%);
+}
+
+nav{
+    min-height: 100%;
+}
+
+nav>svg{
+    margin-top: 2rem;
+}
+
+nav>.links{
+    min-height: 15rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+nav>.links>.column{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav>.links>.column>a{
+    width: fit-content;
+    margin-bottom: 1.6rem;
+}
+
+nav>.links>.column>a:link, a:visited{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-weight: 400; 
+    font-size: 1.1rem;  
+}
+
+nav>.links>.column>a:active{
+    color: hsl(171, 66%, 44%);
+}
+
+nav>.social-media{
+    max-width: 10rem;
+    margin: 0 auto;    
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width:500px){
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content{
+        max-width: 450px;
+    }
+
+    .action-call{
+        max-width: 450px;
+    }
+}
+
+
+@media screen and (min-width:1049px){
+
+    main{
+        display: block;
+    }
+
+    .content, .action-call{
+        max-width: none;
+    }
+
+
+    header>.logo{
+        background-image: url(../images/bg-header-desktop.png);
+    }
+
+    html{
+        font-size: 1.3rem;
+    }
+
+    h1,
+    h2{
+        font-size: 1.7rem;
+    }
+
+    .history{
+        max-width: 34rem;  
+    }
+
+    .snippets, .access, .clipboard{
+        max-width: 35rem;
+    }
+
+    .action-call{
+        margin: 0 auto;
+        max-width: 26rem;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.6rem;
+        justify-content: space-around;
+    }
+
+    .btn{
+        width: 11rem;
+        padding-top: .6rem;
+    }
+
+    .mac-btn:link, .mac-btn:visited{
+        margin-top: 0;
+        font-size: .9rem;
+    }
+
+    .ios-btn:link, .ios-btn:visited{
+        font-size: .9rem;
+        
+    }
+
+
+    .comp-img-and-properties{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .comp-img-and-properties>.column{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+        margin-left: 5.5rem;
+        width: 20rem;
+    }
+
+    .comp-img-and-properties>.column>p{
+        line-height: 1.6rem;
+    }
+
+    .devices-img-div{
+        margin-top: 5rem;
+    }
+
+    .supercharge>p{
+        margin-top: .75rem;
+        font-size: .9rem;
+    }
+
+    .text-columns{
+        max-width: 52rem;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-shrink: 1;
+        gap: .9rem;
+    }
+
+    .text-columns>.column{
+        margin: 0;
+        flex: 1;
+    }
+
+    .text-columns>.column>p{
+        font-size: .75rem;
+    }
+
+    .logo-columns{
+        max-width: 52rem;
+        margin: 0 auto;
+        margin-top: 7rem;
+        min-height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .clipboard{
+        margin-top: 7rem;
+    }
+
+    .clipboard>p{
+        font-size: .9rem;
+    }
+
+    footer{
+        min-height: fit-content;
+        margin-top: 8rem;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    nav>svg{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-right: 5rem;
+    }
+
+    nav>.links{
+        min-width: 500px;
+        min-height: fit-content;
+        margin-top: 2rem;
+        flex-direction: row;
+        flex: 1;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+
+    nav>.links>.column{
+        align-items: baseline; 
+    }
+
+
+    nav>.links>.column>a:link, a:visited{
+        font-size: .8rem; 
+    }
+    
+    
+    nav>.social-media{
+        margin: 0;
+        margin-left: 9rem;
+
+    }
+
+    nav>.social-media>a{
+        margin-right: 1rem;  
+    }
+} 
+
+
+
+
+
+
+
+
+
+
